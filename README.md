@@ -1,10 +1,6 @@
 # Baselinker API Application
 
-This application interacts with the Baselinker API to:
-1. List all products in inventory ID 833
-2. Display product details (id, sku, ean, name, field1, field2)
-3. Allow updating the second extra field (extra_field_484) for product ID 12064368
-
+This application interacts with the Baselinker API 
 ## Setup
 
 1. Install the required dependencies:
