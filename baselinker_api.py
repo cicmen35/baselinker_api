@@ -1,17 +1,7 @@
 import requests
 import json
 from tabulate import tabulate
-import dotenv
-
-dotenv.load_dotenv()
-
-
-API_URL = "https://api.baselinker.com/connector.php"
-TOKEN = dotenv.dotenv_values(".env")["TOKEN"]
-INVENTORY_ID = 833
-TARGET_PRODUCT_ID = "12064368"
-EXTRA_FIELD_1_ID = "extra_field_483"
-EXTRA_FIELD_2_ID = "extra_field_484"
+from settings import API_URL, TOKEN, INVENTORY_ID, TARGET_PRODUCT_ID, EXTRA_FIELD_1_ID, EXTRA_FIELD_2_ID
 
 
 def make_request(method, parameters=None):
